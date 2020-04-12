@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>简听 - 随时随地，想听就听</title>
+    <title>西安天健app下载</title>
     <script type="text/javascript">
         // 获取终端的相关信息
         var Terminal = {
@@ -23,28 +23,27 @@
         }
  
         // 根据不同的终端，跳转到不同的地址
-        var theUrl = 'https://itunes.apple.com/cn/app/id1299542018';
+        var theUrl = 'http://182.92.191.113:8156/uploads/app/android_1.0.0.apk';
         if(Terminal.platform.android){//安卓端
-            document.write('抱歉，“简听 - 随时随地，想听就听”暂时没有安卓版APP!');
-            //theUrl = 'https://itunes.apple.com/app/id1299542018';
-            //location.href = theUrl;
+            theUrl = 'http://182.92.191.113:8156/uploads/app/android_1.0.0.apk';
+            location.href = theUrl;
         } else {
             if(Terminal.platform.iPhone){//iPhone端
-                theUrl = 'https://itunes.apple.com/app/id1299542018';
+                theUrl = 'itms-services://?action=download-manifest&url=https://gitee.com/lh52mm/other/raw/master/Iwater_tianjian.plist';
             }else if(Terminal.platform.iPad){//iPad端
                 // 还可以通过language，区分开多国语言版
                 switch(Terminal.language){
                     case 'en-us'://iPad英文版APP Store地址
-                        theUrl = 'https://itunes.apple.com/app/id1299542018';
+                        theUrl = 'itms-services://?action=download-manifest&url=https://gitee.com/lh52mm/other/raw/master/Iwater_tianjian.plist';
                         break;
                     case 'ko-kr'://iPad韩语版APP Store地址
-                        theUrl = 'https://itunes.apple.com/app/id1299542018';
+                        theUrl = 'itms-services://?action=download-manifest&url=https://gitee.com/lh52mm/other/raw/master/Iwater_tianjian.plist';
                         break;
                     case 'ja-jp'://iPad日文版APP Store地址
-                        theUrl = 'https://itunes.apple.com/app/id1299542018';
+                        theUrl = 'itms-services://?action=download-manifest&url=https://gitee.com/lh52mm/other/raw/master/Iwater_tianjian.plist';
                         break;
                     default://iPad默认APP Store地址
-                        theUrl = 'https://itunes.apple.com/app/id1299542018';
+                        theUrl = 'itms-services://?action=download-manifest&url=https://gitee.com/lh52mm/other/raw/master/Iwater_tianjian.plist';
                 }
             }
  
