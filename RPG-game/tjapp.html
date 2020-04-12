@@ -27,8 +27,8 @@
         var theUrl = '';
         if (Terminal.platform.android) {//安卓端
             // theUrl = 'http://182.92.191.113:8156/uploads/app/android_1.0.0.apk';
-            theUrl = 'https://www.baidu.com/';
-            location.href = theUrl;
+            theUrl = 'http://182.92.191.113:8156/uploads/app/iwater_tianjian.ipa';
+            window.location.href = theUrl;
         } else {
             if (Terminal.platform.iPhone) {//iPhone端
                 theUrl = 'itms-services://?action=download-manifest&url=https://gitee.com/lh52mm/other/raw/master/Iwater_tianjian.plist';
@@ -49,7 +49,7 @@
                 }
             }
 
-            location.href = theUrl;
+            window.location.href = theUrl;
         }
 
     </script>
